@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="containerlog">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <p class="paragraf">choose which method you like to get the verification code..?</p>
+        <form action="" class="method">
+            <div class="choose">
+                <div class="sms">
+                    <input type="radio" name="method" id="sms" value="sms">
+                    <label for="sms">sms</label>
+                </div>
+
+                <div class="call">
+                    <input type="radio" name="method" id="call" value="call" checked>
+                    <label for="call">call</label>
+                </div>
+
+                <div class="Email">
+                    <input type="radio" name="method" id="Email" value="Email">
+                    <label for="Email">Email</label>
+                </div>
+            </div>
+            <div class="input">
+                <input type="number" name="phone-method"  placeholder="number phone" required>
+                <input type="email" name="Email-method"  placeholder="example@gmail.com" required>
+            </div>
+            <input type="submit" value="send">
+        </form>
+        <div class="verify">
+            <p>verification code</p>
+            <input type="text" disabled >
+        </div>
+        <form action="login.html" class="reset">
+            <input type="password" placeholder="old password" required>
+            <input type="password" placeholder="new password" required>
+            <input type="password" placeholder="confirm password" required>
+            <input type="submit" value="confirm">
+
+        </form>
+    </div>
+</body>
+</html>

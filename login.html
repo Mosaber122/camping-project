@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="containerlog">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <form action="index.html">
+            <div class="user">
+                <label for="user"><i class="fa-regular fa-user"></i></label>
+                <input type="text" name="user" id="user" placeholder="user name" required>
+            </div>
+            <div class="password">
+                <label for="password"><i class="fa-solid fa-unlock-keyhole"></i></label>
+                <input type="password" name="password" id="password" placeholder="password" required minlength="6">
+            </div>
+            <div class="remember">
+                <div class="check">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <div class="forgot">
+                    <a href="forgot.html">Forgot Password</a>
+                </div>
+            </div>
+            <div class="login">
+                <input type="submit" value="Log In">
+            </div>
+
+        </form>
+        <div class="create">
+            <p>Don't have an account? </p>
+            <a href="">Create one</a>
+        </div>
+        <h3>Or Login with</h3>
+        <div class="sociallogin">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@media (max-width:880px) {
+    .home{
+        height: 100vh;
+    }
+    nav > a{
+        font-size: 25px;
+        font-weight: 800;
+        
+    }
+    nav{
+        justify-content: space-between;
+        padding: 0px 10px;
+
+    }
+    nav ul{
+        display: none;
+    }
+    nav label{
+        display: block;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+    nav label i{
+        font-size: 30px;
+        padding:5px ;
+        
+    }
+    nav label:hover{
+        background-color: greenyellow;
+        cursor: pointer;
+    }
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 81px;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.541);
+        width: 100%;
+        height: 100vh;
+        transition: all 1s ease;
+    }
+    nav ul li a{
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 800;
+        font-size: 15px;
+        color: greenyellow;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    /*.....................*/
+      .home .contain{
+        top: 20%;
+        left: 50px;
+        width: 80%;
+        height: 50%;
+        align-items: center;
+        
+      }
+      .home .contain .p1{
+        display: none;
+      }
+      .home .contain p{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        text-transform: capitalize;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.096);
+        border-radius: 8px;
+        display: none;
+      }
+      .home .contain h1{
+        text-transform: uppercase;
+        font-size: 70px;
+        font-weight: 800px;
+        color: white;
+        text-shadow: 20px 20px 10px rgb(0, 0, 0);
+        cursor: grab;
+      }
+      .contain .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      .contain .buttons  a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+        transition: all 0.5s;
+        
+      }
+      .contain .buttons  a:hover{
+        background-color: greenyellow;
+        color: snow;
+        transform: translateY(-10px);
+        
+      }
+      /*------activity-------*/
+      .topic{
+        flex-grow: 1;
+      }
+      /*-------------------*/
+      .video .textvideo{
+        top: 37%;
+      }
+      .video .textvideo h1{
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+      .video .textvideo p{
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+      /*-------------------*/
+      .footer .containerfooter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer .containerfooter .list ul{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+      }
+      .footer .containerfooter .list ul li a:hover{
+        transform: translateX(15px);
+      }
+      
+
+
+      
+
+
+
+            
+}
